@@ -1,0 +1,23 @@
+<h2>Show movie</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @movie.title %>
+  </li>
+
+  <li>
+    <strong>Summary:</strong>
+    <%= @movie.summary %>
+  </li>
+
+  <li>
+    <strong>Year:</strong>
+    <%= @movie.year %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: movie_path(@conn, :edit, @movie) %>
+<%= link "Back", to: movie_path(@conn, :index) %>
